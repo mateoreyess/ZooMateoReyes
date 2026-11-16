@@ -24,31 +24,98 @@
     <hr>
     <!--Formulario-->
     <main>
-        <h2 style="text-align: center;">Formulario de Visita</h2>
+<h2 style="text-align: center;">Formulario de Visita</h2>
 
         <form action="#" method="get">
+            <!-- 1 -->
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="usuario_nombre" placeholder="Escribe tu nombre">
             <br><br>
 
+            <!-- 2 -->
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="usuario_apellido" placeholder="Escribe tu apellido">
+            <br><br>
+
+            <!-- 3 -->
             <label for="correo">Email:</label>
             <input type="email" id="correo" name="usuario_email" placeholder="Escribe tu correo">
             <br><br>
 
+            <!-- 4 -->
+            <label for="clave">Contraseña:</label>
+            <input type="password" id="clave" name="usuario_password" placeholder="Escribe tu contraseña">
+            <br><br>
+
+            <!-- 5 -->
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="usuario_edad" placeholder="Tu edad">
+            <br><br>
+
+            <!-- 6 -->
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono" name="usuario_telefono" placeholder="Tu número de contacto">
+            <br><br>
+
+            <!-- 7 -->
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="usuario_ciudad" placeholder="Ej. Quito">
+            <br><br>
+
+            <!-- 8 -->
             <label for="fecha">Fecha de visita:</label>
             <input type="date" id="fecha" name="usuario_fecha">
             <br><br>
 
+            <!-- 9 -->
+            <label for="adultos">Entradas de adultos:</label>
+            <input type="number" id="adultos" name="usuario_adultos" placeholder="Cantidad">
+            <br><br>
+
+            <!-- 10 -->
+            <label for="ninos">Entradas de niños:</label>
+            <input type="number" id="ninos" name="usuario_ninos" placeholder="Cantidad">
+            <br><br>
+
+            <!-- 11 -->
+            <label>Tipo de entrada:</label>
+            <input type="radio" id="general" name="tipo_entrada" value="general">
+            <label for="general">General</label>
+            <input type="radio" id="vip" name="tipo_entrada" value="vip">
+            <label for="vip">VIP</label>
+            <br><br>
+
+            <!-- 12 -->
+            <label for="horario">Horario de visita:</label>
+            <select id="horario" name="usuario_horario">
+                <option value="manana">Mañana</option>
+                <option value="tarde">Tarde</option>
+            </select>
+            <br><br>
+
+            <!-- 13 -->
             <label for="zona">Zona favorita:</label>
             <select id="zona" name="usuario_zona">
                 <option value="osos">Osos</option>
                 <option value="felinos">Felinos</option>
                 <option value="aves">Aves</option>
+                <option value="reptiles">Reptiles</option>
             </select>
             <br><br>
 
+            <!-- 14 -->
+            <label for="medio">¿Cómo nos conociste?</label>
+            <select id="medio" name="usuario_medio">
+                <option value="redes">Redes sociales</option>
+                <option value="amigos">Amigos o familia</option>
+                <option value="colegio">Colegio o universidad</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br><br>
+
+            <!-- 15 -->
             <input type="checkbox" id="terminos" name="terminos">
-            <label for="terminos">Acepto recibir información</label>
+            <label for="terminos">Acepto recibir información del zoológico</label>
             <br><br>
 
             <input type="submit" value="Enviar datos">
