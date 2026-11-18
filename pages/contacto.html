@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/icono_zoo.png">
+    <title>Mundo Animal - Contacto</title>
+</head>
+
+<body>
+    <header>
+        <h2 style="text-align: center; color: forestgreen; font-size: 50px;">Mundo Animal</h2>
+        <p style="text-align: center; font-size: 20px;">Bienvenidos al paraíso animal</p>
+    </header>
+    <hr>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="https://www.buinzoo.cl/" target="_blank">Página Oficial</a>
+        <a href="/pages/galeria.html">Galería</a>
+        <a href="/pages/contacto.html">Contacto</a>
+    </nav>
+    <hr>
+    <!--Formulario de registro-->
+    <form action="#">
+
+        <label for="nombre">Ingrese su nombre</label>
+        <br>
+        <input type="text" id="nombre" placeholder="Nombre" size="10" required>
+        <br><br>
+
+        <label for="email">Ingrese su email</label>
+        <br>
+        <input type="email" id="email" placeholder="Email" required>
+        <br><br>
+
+        <label for="passw">Ingrese su contraseña</label>
+        <br>
+        <input type="password" id="passw" placeholder="Contraseña" required>
+        <br><br>
+
+        <label for="fecha_nacimiento">Fecha de nacimiento</label>
+        <br>
+        <input type="date" id="fecha_nacimiento" required>
+        <br><br>
+
+        <label for="cargas_familiares">Cargas familiares</label>
+        <br>
+        <input type="number" id="cargas_familiares">
+        <br><br>
+
+        <label for="#">Género</label>
+        <br>
+        <label for="masculino">
+            <input type="radio" id="masculino" name="genero">Masculino
+        </label>
+        <label for="femenino">
+            <input type="radio" id="femenino" name="genero">Femenino
+        </label>
+        <label for="otro">
+            <input type="radio" id="otro" name="genero">Otro
+        </label>
+        <br><br>
+
+        <label for="#">Seleccione su Ciudad: </label>
+        <select name="ciudad" id="ciudad">
+            <option value="opcion" disabled selected>Seleccionar opción</option>
+            <option value="quito">Quito</option>
+            <option value="cuenca">Cuenca</option>
+            <option value="latacunga">Latacunga</option>
+            <option value="ibarra">Ibarra</option>
+        </select>
+        </label>
+        <br><br>
+
+        <label for="foto">Seleccione su Foto: </label>
+        <br>
+        <input type="file" id="foto">
+        <br><br>
+
+        <label for="comentarios">Deje sus Comentarios:</label>
+        <br>
+        <textarea name="Comentarios" id="comentarios" cols="30" rows="5" placeholder="Escriba sus comentarios"></textarea>
+        <br><br>
+        
+        <!--Botones | button = botón simple, sin funcionalidad | submit = envía datos (DB) | reset = limpia el formulario-->
+
+        <button>Botón simple</button>
+        <input type="submit" value="Enviar">
+        <button type="reset">Limpiar</button>
+    </form>
+</body>
+
+</html>
